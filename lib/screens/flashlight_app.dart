@@ -61,10 +61,12 @@ class _FlashLightAppState extends State<FlashLightApp>
                 _animatedcontroller.forward();
                 fontSize = 40;
                 color = Colors.red;
+                HapticFeedback.lightImpact();
               } else {
                 _animatedcontroller.reverse();
                 fontSize = 20;
                 color = Colors.white;
+                HapticFeedback.lightImpact();
               }
               isClicked = !isClicked;
               controller.toggle();
